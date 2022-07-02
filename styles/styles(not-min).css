@@ -1333,7 +1333,7 @@ a {
 
   .menu-burger.active::after {
     -webkit-transform: translateY(-10px) rotate(45deg);
-    transform: translateY(-10px) rotate(45deg);
+    transform: translateY(-10px) rotate(-45deg);
   }
 
   .menu-burger.active .menu-burger__line {
