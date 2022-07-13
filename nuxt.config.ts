@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            script: [{src: '@/assets/js/canvas.js'}],
+            script: [{src: '/public/js/canvas.js'}],
         },
     },
     router: {
@@ -23,5 +23,5 @@ export default defineNuxtConfig({
             linkExactActiveClass: 'active',
         },
     },
-    css: ['@/assets/css/tailwind.css', '@/assets/css/main.css'],
+    css: ['/public/css/tailwind.css', '/public/css/main.css'],
 })
