@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            script: [{src: './public/js/canvas.js'}],
+            script: [{src: '@/assets/js/canvas.js'}],
         },
     },
     router: {
