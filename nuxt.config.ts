@@ -1,7 +1,6 @@
 import {defineNuxtConfig} from 'nuxt'
 
 export default defineNuxtConfig({
-    target: 'static',
     build: {
         postcss: {
             postcssOptions: {
@@ -14,7 +13,7 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            script: [{src: '/public/js/canvas.js'}],
+            script: [{src: '/assets/js/canvas.js'}],
         },
     },
     router: {
@@ -23,5 +22,5 @@ export default defineNuxtConfig({
             linkExactActiveClass: 'active',
         },
     },
-    css: ['/public/css/tailwind.css', '/public/css/main.css'],
+    css: ['/assets/css/tailwind.css', '/assets/css/main.css'],
 })
