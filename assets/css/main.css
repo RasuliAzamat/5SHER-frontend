@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Libre+Barcode+39+Extended+Text&display=swap');
+
+@tailwind base;
+
+@layer base {
+    ::-webkit-scrollbar {
+        @apply w-2;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-light;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-darkblue;
+    }
+
+    html {
+        @apply bg-dark scroll-smooth;
+    }
+
+    section {
+        @apply mb-16 md:mb-20 lg:mb-24;
+    }
+
+    section:last-child {
+        @apply m-0 pb-16 md:pb-20 lg:pb-24;
+    }
+
+    h1 {
+        @apply font-bold text-2xl md:text-3xl lg:text-4xl;
+    }
+
+    h2 {
+        @apply font-bold text-xl md:text-2xl lg:text-3xl;
+    }
+
+    h3 {
+        @apply font-bold text-lg md:text-xl lg:text-2xl;
+    }
+
+    a.active {
+        @apply border-b-light;
+    }
+
+    *,
+    *::before,
+    *::after {
+        @apply md:text-lg text-light;
+        font-family: 'Jura', sans-serif;
+    }
+
+    #canvas {
+        @apply fixed top-0 right-0 bottom-0 left-0 -z-50;
+    }
+}
